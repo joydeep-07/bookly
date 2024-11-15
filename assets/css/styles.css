@@ -832,8 +832,12 @@ color: var(--title-color);
     margin-inline: 1rem;
   }
 
-  .anv__menu{
+  .nav__menu{
     padding-inline: 3rem;
+  }
+  .login__form{
+    /* border: 2px solid red; */
+    height: fit-content;
   }
 
   .discount__img-1,
@@ -856,11 +860,14 @@ color: var(--title-color);
 }
 
 /* For medium devices */
-@media screen and (min-width: 450px){
+@media screen and (min-width: 340px){
   .featured__card{
     width: 290px;
   }
-
+  .login__form{
+    /* border: 2px solid red; */
+    height: fit-content;
+  }
   
   .discount__container{
     /* width:420px; */
