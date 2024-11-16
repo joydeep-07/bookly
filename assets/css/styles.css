@@ -277,6 +277,8 @@ color: var(--first-color);
   background-color: var(--container-color);
   border: 2px solid var(--border-color);
   padding-inline: 1rem;
+  /* border:1px solid red; */
+  border-radius:30px;
 }
 
 .search__icon{
