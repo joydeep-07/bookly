@@ -1170,6 +1170,38 @@ color: var(--title-color);
   }
 }
 
-@media screen and(min-width: 1220px){
-  
+@media screen and (min-width: 1200px) {
+  body {
+    padding: 0;
+    margin: auto;
+    max-width: 1200px; /* Centralize content for 1200px width */
+  }
+
+  .container {
+    max-width: 1150px; /* Adjust the inner container for better alignment */
+    margin: 0 auto;
+  }
+
+  .home__container {
+    grid-template-columns: 1fr 1fr; /* Ensure content and image split evenly */
+    align-items: center;
+  }
+  .home__data{
+    text-align: initial;
+  }
+
+  .featured__container {
+    grid-template-columns: repeat(3, 1fr); /* Show more featured items in a row */
+    gap: 20px;
+  }
+
+  .services__container {
+    grid-template-columns: repeat(3, 1fr); /* Distribute service cards evenly */
+    column-gap: 3rem;
+  }
+  .testimonial__card {
+    max-width: 300px; /* Avoid excessive stretching */
+    margin: auto;
+  }
+
 }
