@@ -884,7 +884,7 @@ color: var(--title-color);
     width: 95%;
   }
   .discount__description{
-    padding:0px 80px 0px 80px;
+    /* padding:0px 80px 0px 80px; */
   }
 
   .new__card{
@@ -938,7 +938,7 @@ color: var(--title-color);
     width: 95%;
   }
   .discount__description{
-    padding:0px 90px 0px 90px;
+    /* padding:0px 90px 0px 90px; */
   }
 
   .join__form{
@@ -974,7 +974,7 @@ color: var(--title-color);
     width: 95%;
   }
   .discount__description{
-    padding:0px 120px 0px 120px;
+    /* padding:0px 120px 0px 120px; */
   }
 
   .footer__container{
@@ -1193,6 +1193,45 @@ color: var(--title-color);
   .featured__container {
     grid-template-columns: repeat(3, 1fr); /* Show more featured items in a row */
     gap: 20px;
+  }
+  .discount__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    align-items: center; /* Align content vertically */
+    gap: 2rem; /* Adjust space between title/description and images */
+  }
+
+  .discount__data {
+    /* text-align: left; Align text to the left */
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column; /* Stack heading and description vertically */
+    align-items: flex-end; /* Align content to the right */
+    text-align: left; /* Align text within the container */
+    gap: 1rem; /* Add spacing between the heading and description */
+  }
+  .discount__title {
+    font-size: 2rem; /* Adjust the heading size if needed */
+    margin: 0; /* Remove default margin for consistent alignment */
+    /* border: 1px solid red; */
+    padding-right:230px ;
+    padding-bottom: 20px;
+  }
+
+  .discount__description {
+    font-size: 1rem; /* Adjust the description size */
+    margin: 0; /* Remove default margin for consistent alignment */
+  }
+
+  .discount__images {
+    display: flex;
+    justify-content: center; /* Center the images */
+    gap: 1.5rem; /* Space between images */
+  }
+
+  .discount__img-1,
+  .discount__img-2 {
+    width: 200px; /* Ensure consistent image sizing */
   }
 
   .services__container {
