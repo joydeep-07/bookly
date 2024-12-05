@@ -45,7 +45,7 @@ if(loginClose){
 /*=============== ADD SHADOW HEADER ===============*/
 const shadowHeader = ()=>{
     const header = document.getElementById('header')
-    // when the scroll is greste than 50 viewport height
+    // when the scroll is grester than 50 viewport height
     this.scrollY >= 50 ? header.classList.add('shadow-header')
                     : header.classList.remove('shadow-header')
 }
@@ -60,7 +60,7 @@ let swiperHome = new Swiper('.home__swiper', {
     centeredSlides:'auto',
 
     autoplay:{
-        delay:3000,
+        delay:1500,
         disableOnInteraction: false,
     },
 
