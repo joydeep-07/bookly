@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Lord of Kings</title>
+  <style>
+    /* Base styling */
+    body {
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #121212;
+      color: #ffffff;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    /* Navbar Styling */
+    nav {
+      background-color: #1f1f1f;
+      color: #ffffff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar-logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .navbar-logo img {
+      width: 25px;
+    }
+
+    .navbar-icons {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+    .navbar-icons i {
+      font-size: 1.2rem;
+      cursor: pointer;
+      color: #ffffff;
+      transition: color 0.3s;
+    }
+
+    .navbar-icons i:hover {
+      color: #007bff;
+    }
+
+    /* Book Details Section */
+    .book-details {
+      display: flex;
+      gap: 2rem;
+      padding: 2rem;
+      align-items: flex-start;
+    }
+
+    .book-image {
+      flex: 0 0 300px; /* Adjusted width for a smaller image */
+      height: auto;
+      object-fit: cover;
+    }
+
+    .book-info {
+      flex: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+    }
+
+    .book-title {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .book-description {
+      margin-bottom: 1rem;
+      line-height: 1.6;
+    }
+
+    .price {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .rating {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+      font-size: 1.2rem;
+      color: #ffd700; /* Golden color for stars */
+    }
+
+    .actions {
+      display: flex;
+      gap: 1rem;
+    }
+
+    button {
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    .add-to-cart {
+      background-color: #007bff;
+      color: #ffffff;
+    }
+
+    .buy-now {
+      background-color: #28a745;
+      color: #ffffff;
+    }
+
+    /* Light mode */
+    body.light {
+      background-color: #ffffff;
+      color: #000000;
+    }
+
+    body.light nav {
+      background-color: #f1f1f1;
+      color: #000000;
+    }
+
+    body.light .navbar-icons i {
+      color: #000000;
+    }
+
+    body.light .navbar-icons i:hover {
+      color: #007bff;
+    }
+
+    body.light .rating {
+      color: #ffcc00;
+    }
+button:hover {
+  opacity: 0.8;
+}
+
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <div class="navbar-logo">
+      <!-- <img src="https://via.placeholder.com/25" alt="Logo"> -->
+      <span>Bookly</span>
+    </div>
+    <div class="navbar-icons">
+      <i class="fas fa-search"></i>
+      <i class="fas fa-user"></i>
+      <i class="fas fa-shopping-cart"></i>
+    </div>
+  </nav>
+
+  <!-- Book Details Section -->
+  <div class="book-details">
+    <img class="book-image" src="./assets/img/book-9.png" alt="Book Cover">
+    <div class="book-info">
+      <h2 class="book-title">Bird Park</h2>
+      <p class="book-description">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum auctor libero nec tortor placerat, sed ullamcorper nisl porttitor. Curabitur mollis, turpis id convallis euismod, lorem libero tristique libero, vitae viverra elit arcu in leo.
+      </p>
+      <p class="book-description">
+        Suspendisse potenti. Praesent convallis velit ut erat facilisis, in gravida lectus suscipit. Aliquam erat volutpat. Morbi fringilla nec urna at dictum. Ut blandit, urna ut fermentum aliquet, risus turpis sodales enim, ut malesuada metus erat nec lectus.
+      </p>
+      <p class="price"><strong>Price:</strong> ₹469.99</p>
+      <div class="rating">
+        ★★★★☆ (4.5)
+      </div>
+      <div class="actions">
+        <button class="add-to-cart">Add to Cart</button>
+        <button class="buy-now">Buy Now</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- FontAwesome Icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</body>
+</html>

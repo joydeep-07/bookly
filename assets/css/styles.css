@@ -809,6 +809,10 @@ color: var(--title-color);
   background-color: hsl(230, 16%, 65%);
 }
 
+/* .new__card{
+  border: 2px solid red;
+} */
+
 /*=============== SCROLL UP ===============*/
 .scrollup{
   position: fixed;
